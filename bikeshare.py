@@ -156,6 +156,7 @@ def display_raw_data(df):
     """The fuction takes the name of the city produced by the get_filters fuction as input and returns the raw data of that city as chunks of 5 rows based upon user input.
     """
     starting_row = 0
+    pd.set_option('display.max_columns',200)
     raw_view = input ( 'Displaying raw data is available, would you like to check it?: Yes \n' ).lower()
     while raw_view not in ['yes', 'no']:
         raw_view = input ( 'Displaying raw data is available, would you like to check it?: Yes \n' ).lower()
